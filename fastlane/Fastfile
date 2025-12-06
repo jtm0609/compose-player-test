@@ -1,0 +1,34 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:android)
+
+platform :android do
+    desc "My awesome app"
+    lane :distribute do
+        build_android_app(
+        task: "assemble",
+        build_type: "Release"
+        )
+
+        # build_android_app is a built-in fastlane action.
+        firebase_app_distribution(
+            app: "1:270948950688:android:df14c6299534abd1819fc5",
+            testers: "ppd9865@gmail.com",
+            service_credentials_file: "./key/jtm-0609.json",
+            release_notes: "Lots of amazing new features to test out!"
+        )
+    end
+end

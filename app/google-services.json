@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "270948950688",
+    "project_id": "exoplayerview-id",
+    "storage_bucket": "exoplayerview-id.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270948950688:android:df14c6299534abd1819fc5",
+        "android_client_info": {
+          "package_name": "com.example.exoplayerviewtest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7c81V5Wex06z4AyP7C2OpE1pRlTim_Vs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
