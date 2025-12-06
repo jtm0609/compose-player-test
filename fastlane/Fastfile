@@ -27,7 +27,7 @@ platform :android do
         firebase_app_distribution(
             app: "1:270948950688:android:df14c6299534abd1819fc5",
             testers: "ppd9865@gmail.com",
-            service_credentials_file: "./key/jtm-0609.json",
+            service_credentials_file: ENV["FIREBASE_CREDENTIALS_PATH"],
             release_notes: "Lots of amazing new features to test out!"
         )
     end
